@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: backend
+    runtime: docker
+    plan: free
+    dockerfilePath: backend/Dockerfile
+    buildCommand: ''
+    startCommand: ''
+    envVars:
+      - key: MONGO_URI
+        sync: false
